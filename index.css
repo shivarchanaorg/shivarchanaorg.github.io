@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+  cursor: none;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('bg_img.png') center/cover fixed;
+  filter: brightness(50%); /* Adjust the brightness percentage as needed */
+}
+
+#content-container {
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 3;
+}
+
+header {
+  text-align: center;
+  padding: 100px 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+section {
+  padding: 20px;
+  margin-top: 100vh; /* Initial margin equal to the viewport height */
+  box-sizing: border-box;
+}
+
+/* Custom cursor style */
+#custom-cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background: url('star.png') no-repeat center/cover;
+  pointer-events: none;
+  transform-origin: center;
+  transition: transform 0.1s;
+  z-index: 4;
+}
+
+/* Custom cursor trail */
+.cursor-trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+}
